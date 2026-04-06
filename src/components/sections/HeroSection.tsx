@@ -42,8 +42,12 @@ export function HeroSection() {
       </div>
 
       {/* Right Amber Image Card */}
-      <div className="order-1 md:order-2 relative animate-fade-up [animation-delay:400ms] opacity-0 [animation-fill-mode:forwards]">
-        <div className="bg-amber rounded-[32px] overflow-hidden relative w-full aspect-[4/3] md:aspect-[9/10] group">
+      <div className="order-1 md:order-2 relative animate-fade-up [animation-delay:400ms] opacity-0 [animation-fill-mode:forwards] group">
+        {/* Floating Decorative Bars */}
+        <div className="absolute -top-4 -right-4 w-12 h-32 bg-amber rounded-[24px] border-4 border-cream  z-10 transition-transform duration-500 group-hover:translate-y-2 group-hover:-translate-x-2 group-hover:scale-88" />
+        <div className="absolute -bottom-4 -left-4 w-12 h-32 bg-amber rounded-[24px] z-10 border-4 border-cream transition-transform duration-500 group-hover:-translate-y-2 group-hover:translate-x-2 group-hover:scale-88" />
+        
+        <div className="bg-amber rounded-[32px] overflow-hidden relative w-full aspect-[4/3] md:aspect-[9/10] z-0">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img 
             src="/profile-pic.png" 
@@ -51,10 +55,10 @@ export function HeroSection() {
             className="w-full h-full object-cover transition-all duration-700 ease-in-out scale-105 group-hover:scale-100"
           />
           {/* Signature Overlay */}
-          <div className="absolute bottom-6 left-6 right-6 flex justify-between items-end pointer-events-none">
+          <div className="absolute bottom-6 left-12 right-6 flex justify-between items-end pointer-events-none">
             <div className="flex flex-col">
               <span className="font-epilogue font-black text-cream text-md uppercase tracking-tighter leading-none">Harsh</span>
-              <span className="font-manrope font-bold text-cream/60 text-[10px] uppercase tracking-[0.2em] mt-1">prohv v1.0</span>
+              <span className="font-manrope font-bold text-cream/60 text-[10px] uppercase tracking-[0.2em] mt-1">prohv</span>
             </div>
           </div>
         </div>
