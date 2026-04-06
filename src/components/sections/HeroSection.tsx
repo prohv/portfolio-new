@@ -42,7 +42,7 @@ export function HeroSection() {
         {/* Stats Row */}
         <div className="flex flex-col sm:flex-row sm:gap-16 gap-8 mt-10 mb-8">
           {[
-            { value: '+1M', label: 'Peak monthly visits reliably managed via optimized Next.js SSR' },
+            { value: '1M+', label: 'Peak monthly visits reliably managed via optimized Next.js SSR' },
             { value: '10K+', label: 'Daily users served by robust API gateways and scalable architectures' },
           ].map(stat => (
             <div key={stat.value} className="hover:-translate-y-1 transition-transform cursor-default">
