@@ -86,12 +86,6 @@ export function ProjectsSection() {
           </div>
         ))}
       </div>
-
-      <div className="mt-20 flex justify-center">
-        <button className="border border-ink/20 rounded-full px-8 py-4 font-manrope font-bold text-sm tracking-widest uppercase text-ink hover:bg-ink hover:text-cream transition-colors duration-300">
-          View All Projects
-        </button>
-      </div>
     </section>
   );
 }

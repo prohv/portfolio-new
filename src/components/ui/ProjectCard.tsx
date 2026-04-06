@@ -24,7 +24,7 @@ export function ProjectCard({ title, description, imageUrl, githubUrl, isLive }:
           className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
         />
         {/* Dark overlay that fades out slightly on hover */}
-        <div className="absolute inset-0 bg-ink/10 group-hover:bg-ink/5 transition-colors duration-500" />
+        <div className="absolute inset-0 bg-ink/5 group-hover:bg-ink/3 transition-colors duration-500" />
         
         {/* Dynamic icon pill overlaid */}
         <div className="absolute bottom-4 left-4 right-4 flex justify-between items-center px-4 py-3 bg-cream/90 backdrop-blur-md rounded-2xl translate-y-[150%] opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 ease-out">
