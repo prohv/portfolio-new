@@ -22,15 +22,15 @@ export function MarqueeSection() {
   return (
     <section 
       ref={ref} 
-      className={`overflow-x-hidden pt-20 pb-4 transition-all duration-700 bg-cream ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+      className={`overflow-hidden pt-10 transition-all duration-700 bg-cream ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
     >
       <div className="flex animate-marquee whitespace-nowrap">
-        {['prohv', 'prohv', 'prohv', 'prohv', 'prohv'].map((w, i) => (
+        {[...Array(10)].map((_, i) => (
           <span 
             key={i} 
-            className="font-epilogue font-black text-[28vw] md:text-[22vw] lg:text-[18vw] leading-[0.85] tracking-[-0.04em] text-ink pr-16"
+            className="font-epilogue font-black text-[28vw] md:text-[22vw] lg:text-[18vw] leading-[0.85] tracking-[-0.04em] text-ink pr-16 select-none"
           >
-            {w}
+            prohv
           </span>
         ))}
       </div>
