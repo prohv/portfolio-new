@@ -3,22 +3,25 @@ import { ProjectCard, ProjectCardProps } from '@/components/ui/ProjectCard';
 
 const DEMO_PROJECTS: ProjectCardProps[] = [
   {
-    title: "Ethereal Landscapes",
-    description: "A generative art exploration creating surreal, dream-like landscapes using WebGL and custom shaders.",
-    imageUrl: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=800&auto=format&fit=crop",
-    githubUrl: "https://github.com",
+    title: "CSI Interactions'26",
+    description: "Architected and extended modular full-stack event orchestration systems with deployment to production, handling 2,000+ registrations.",
+    imageUrl: "/interact.webp",
+    githubUrl: "https://interact.csivit.com/",
+    isLive: true,
   },
   {
-    title: "Neon Echoes",
-    description: "Interactive audio-visualizer that maps sound frequencies to vibrant neon geometries in real-time.",
-    imageUrl: "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=800&auto=format&fit=crop",
-    githubUrl: "https://github.com",
+    title: "Riviera'26",
+    description: "Delivered modular UI components for VIT’s annual cultural fest website, supporting 1M+ peak monthly visits with optimized client-side rendering.",
+    imageUrl: "/riviera.webp",
+    githubUrl: "https://riviera.vit.ac.in/",
+    isLive: true,
   },
   {
-    title: "Quantum Threads",
-    description: "A complex data visualization dashboard representing particle physicist data as woven glowing threads.",
-    imageUrl: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop",
-    githubUrl: "https://github.com",
+    title: "DevSpace'26",
+    description: "Owned the development of an 800+ users hackathon platform, designing modular participant portals and asynchronous submission workflows.",
+    imageUrl: "/devspace.webp",
+    githubUrl: "https://devspace.csivit.com/",
+    isLive: true,
   },
   {
     title: "Velvet Shadows",
@@ -64,7 +67,7 @@ export function ProjectsSection() {
       <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 sm:mb-16 gap-6">
         <div>
           <h2 className="font-epilogue font-black text-4xl sm:text-5xl lg:text-7xl text-ink uppercase tracking-tighter">
-            Selected<br />Work
+            Selected<br/>Work
           </h2>
         </div>
         <p className="font-manrope font-medium text-ink/70 text-base sm:text-lg max-w-[400px]">
