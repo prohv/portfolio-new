@@ -2,7 +2,7 @@ import React from 'react';
 
 export function HeroSection() {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16 px-6 md:px-10 lg:px-16 pt-8 lg:pt-16 max-w-[1200px] mx-auto w-full">
+    <section className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16 px-6 md:px-10 lg:px-16 pt-4 lg:pt-8 max-w-[1200px] mx-auto w-full">
       {/* Left Text content */}
       <div className="order-2 md:order-1 flex flex-col justify-center">
         <h1 className="font-epilogue font-black text-[15vw] md:text-[10vw] lg:text-[clamp(80px,10vw,160px)] leading-[0.88] tracking-[-0.04em] text-ink animate-fade-up [animation-delay:200ms] opacity-0 [animation-fill-mode:forwards]">
