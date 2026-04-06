@@ -13,10 +13,10 @@ export function HeroSection() {
         <h1 className="font-epilogue font-black text-[15vw] md:text-[10vw] lg:text-[clamp(80px,10vw,160px)] leading-[0.88] tracking-[-0.04em] text-ink animate-fade-up [animation-delay:200ms] opacity-0 [animation-fill-mode:forwards]">
           HARSH<br />
         </h1>
-        <p className="font-manrope font-medium text-[17px] text-ink mt-6 max-w-[380px] self-end md:self-start md:ml-auto md:text-right leading-relaxed">
-<p>Full-stack developer skilled in TypeScript, Next.js, React, Express.js, and PostgreSQL.</p>
-<p>Building scalable systems and seamless digital experiences with reliability and optimisation.</p>
-        </p>
+        <div className="font-manrope font-medium text-[17px] text-ink mt-6 max-w-[380px] self-end md:self-start md:ml-auto md:text-right leading-relaxed flex flex-col gap-3">
+          <p>Full-stack developer skilled in TypeScript, Next.js, React, Express.js, and PostgreSQL.</p>
+          <p>Building scalable systems and seamless digital experiences with reliability and optimisation.</p>
+        </div>
 
         {/* Social Links */}
         <div className="flex items-center gap-3 mt-14 md:self-start">
@@ -73,7 +73,7 @@ export function HeroSection() {
               className="w-full h-full object-cover transition-all duration-700 ease-in-out scale-105 group-hover:scale-100"
             />
             {/* Signature Overlay */}
-            <div className="absolute bottom-6 left-12 right-6 flex justify-between items-end pointer-events-none">
+            <div className="absolute bottom-6 left-12 right-6 hidden sm:flex justify-between items-end pointer-events-none">
               <div className="flex flex-col">
                 <span className="font-epilogue font-black text-cream text-md uppercase tracking-tighter leading-none">Harsh</span>
                 <span className="font-manrope font-bold text-cream/60 text-[10px] uppercase tracking-[0.2em] mt-1">prohv</span>
