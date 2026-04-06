@@ -1,7 +1,7 @@
 import { Navbar } from "@/components/layout/Navbar";
 import { HeroSection } from "@/components/sections/HeroSection";
-import { MarqueeSection } from "@/components/sections/MarqueeSection";
 import { ProjectsSection } from "@/components/sections/ProjectsSection";
+import { FooterSection } from "@/components/sections/FooterSection";
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
         <HeroSection />
       </div>
       <ProjectsSection />
-      <MarqueeSection />
+      <FooterSection />
     </main>
   );
 }
