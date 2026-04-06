@@ -15,6 +15,10 @@ const manrope = Manrope({
 export const metadata: Metadata = {
   title: "Harsh - Portfolio",
   description: "visual poetry",
+  icons: {
+    icon: "/portfolio-logo.svg",
+    apple: "/portfolio-logo.svg",
+  },
 };
 
 export default function RootLayout({
