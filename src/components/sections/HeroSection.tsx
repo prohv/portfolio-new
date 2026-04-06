@@ -19,23 +19,28 @@ export function HeroSection() {
         </p>
 
         {/* Social Links */}
-        <div className="flex items-center gap-3 mt-12 md:self-start">
+        <div className="flex items-center gap-3 mt-14 md:self-start">
           {[
-            { icon: GithubIcon, label: 'GitHub' },
-            { icon: LinkedinIcon, label: 'LinkedIn' },
-            { icon: TwitterIcon, label: 'Twitter' },
-            { icon: MailIcon, label: 'Mail' }
-          ].map(({ icon: Icon, label }) => (
-            <button key={label}
+            { icon: GithubIcon, label: 'GitHub', url: 'https://github.com/prohv' },
+            { icon: LinkedinIcon, label: 'LinkedIn', url: 'https://linkedin.com/in/proharsh' },
+            { icon: TwitterIcon, label: 'Twitter', url: 'https://twitter.com/proharshv' },
+            { icon: MailIcon, label: 'Mail', url: 'mailto:proharshv11@gmail.com' }
+          ].map(({ icon: Icon, label, url }) => (
+            <a 
+              key={label}
+              href={url}
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex flex-none items-center justify-center border border-ink/20 rounded-full w-10 h-10 aspect-square text-ink hover:bg-ink hover:text-cream transition-colors duration-300 group"
-              aria-label={`Visit my ${label} profile`}>
+              aria-label={`Visit my ${label} profile`}
+            >
               <Icon className="w-5 h-5 group-hover:scale-110 transition-transform" strokeWidth={1.5} />
-            </button>
+            </a>
           ))}
         </div>
 
         {/* Stats Row */}
-        <div className="flex flex-col sm:flex-row sm:gap-16 gap-8 mt-12 mb-8">
+        <div className="flex flex-col sm:flex-row sm:gap-16 gap-8 mt-10 mb-8">
           {[
             { value: '+1M', label: 'Peak monthly visits reliably managed via optimized Next.js SSR' },
             { value: '10K+', label: 'Daily users served by robust API gateways and scalable architectures' },

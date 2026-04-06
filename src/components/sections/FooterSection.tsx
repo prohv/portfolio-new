@@ -16,8 +16,8 @@ export function FooterSection() {
         </div>
         
         <div className="flex flex-col gap-4 items-start md:items-end animate-fade-up opacity-0 [animation-delay:300ms] [animation-fill-mode:forwards]">
-          <a href="mailto:hello@prohv.com" className="font-epilogue font-bold text-3xl lg:text-4xl text-ink hover:text-amber transition-colors duration-300 group flex items-center gap-4">
-            hello@prohv.com
+          <a href="mailto:proharshv11@gmail.com" className="font-epilogue font-bold text-2xl lg:text-3xl text-ink hover:text-amber transition-colors duration-300 group flex items-center gap-4">
+            proharshv11@gmail.com
             <span className="w-8 h-8 rounded-full border border-ink/20 flex items-center justify-center group-hover:bg-amber group-hover:border-amber group-hover:text-cream transition-all duration-300">
               <svg className="w-4 h-4 translate-x-[1px] translate-y-[-1px]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -25,9 +25,19 @@ export function FooterSection() {
             </span>
           </a>
           <div className="flex items-center gap-6 mt-4">
-            {['Instagram', 'Twitter', 'LinkedIn'].map(social => (
-              <a key={social} href={`#${social.toLowerCase()}`} className="font-manrope font-bold text-[11px] uppercase tracking-[0.2em] text-ink/50 hover:text-ink transition-colors duration-300">
-                {social}
+            {[
+              { label: 'Instagram', url: 'https://instagram.com/proharshv' },
+              { label: 'Twitter', url: 'https://twitter.com/proharshv' },
+              { label: 'LinkedIn', url: 'https://linkedin.com/in/proharsh' }
+            ].map(social => (
+              <a 
+                key={social.label} 
+                href={social.url} 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-manrope font-bold text-[11px] uppercase tracking-[0.2em] text-ink/50 hover:text-ink transition-colors duration-300"
+              >
+                {social.label}
               </a>
             ))}
           </div>
