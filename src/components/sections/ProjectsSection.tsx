@@ -42,23 +42,23 @@ const DEMO_PROJECTS: ProjectCardProps[] = [
     githubUrl: "https://github.com/prohv/whats-the-tldr",
   },
   {
-    title: "Stellar Cartography",
-    description: "Mapping fictional solar systems using procedurally generated 3D planets and cosmic dust.",
-    imageUrl: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800&auto=format&fit=crop",
-    githubUrl: "https://github.com",
+    title: "Auto NPTEL",
+    description: "Chrome extension that extracts NPTEL assessment questions and uses AI to automatically fill in correct answers.",
+    imageUrl: "/autonptel.webp",
+    githubUrl: "https://github.com/prohv/auto-nptel",
   },
   {
-    title: "Midnight API",
-    description: "A beautifully documented dark-mode RESTful API service for generating poetic placeholders.",
-    imageUrl: "https://images.unsplash.com/photo-1507608616759-54f48f0af0ee?q=80&w=800&auto=format&fit=crop",
-    githubUrl: "https://github.com",
+    title: "AutoPort",
+    description: "Automatically handles VIT WiFi portal authentication so users never have to enter credentials manually again.",
+    imageUrl: "/autoport.webp",
+    githubUrl: "https://github.com/prohv/autoport",
   },
   {
-    title: "Obelisk",
-    description: "A monolithic minimal CMS designed for artists and photographers to showcase massive galleries seamlessly.",
-    imageUrl: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?q=80&w=800&auto=format&fit=crop",
-    githubUrl: "https://github.com",
-  }
+    title: "BulletPages",
+    description: "One-click AI summarizer that extracts key insights from blogs and news articles into compact bullet points.",
+    imageUrl: "/bulletpages.webp",
+    githubUrl: "https://github.com/prohv/bulletpages",
+  },
 ];
 
 export function ProjectsSection() {
