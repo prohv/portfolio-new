@@ -43,32 +43,21 @@ export function HeroSection() {
 
       {/* Right Amber Image Card */}
       <div className="order-1 md:order-2 relative animate-fade-up [animation-delay:400ms] opacity-0 [animation-fill-mode:forwards]">
-        <div className="bg-amber rounded-[32px] overflow-hidden relative w-full aspect-[4/3] md:aspect-[9/10]">
-          {/* We are omitting the signature and photo implementation details to focus on building the layout shape without explicit assets, but applying the styling instructions. */}
-          <div className="absolute inset-0 flex items-center justify-center opacity-30 text-ink/30 font-epilogue text-2xl font-bold">
-            [Photo Placeholder]
+        <div className="bg-amber rounded-[32px] overflow-hidden relative w-full aspect-[4/3] md:aspect-[9/10] group">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img 
+            src="/profile-pic.png" 
+            alt="Harsh Profile" 
+            className="w-full h-full object-cover transition-all duration-700 ease-in-out scale-105 group-hover:scale-100"
+          />
+          {/* Signature Overlay */}
+          <div className="absolute bottom-6 left-6 right-6 flex justify-between items-end pointer-events-none">
+            <div className="flex flex-col">
+              <span className="font-epilogue font-black text-cream text-md uppercase tracking-tighter leading-none">Harsh</span>
+              <span className="font-manrope font-bold text-cream/60 text-[10px] uppercase tracking-[0.2em] mt-1">prohv v1.0</span>
+            </div>
           </div>
         </div>
-
-        {/* Globe Button (Top Right) */}
-        <button 
-          className="absolute top-6 -right-6 w-14 h-14 bg-ink rounded-full flex items-center justify-center hover:scale-105 transition-transform shadow-lg z-10 min-h-[44px] min-w-[44px]"
-          aria-label="Globe/Map"
-        >
-          <svg className="w-6 h-6 text-cream" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-          </svg>
-        </button>
-
-        {/* Arrow CTA Button (Bottom Right) */}
-        <button 
-          className="absolute bottom-6 -right-6 w-14 h-14 bg-ink rounded-full flex items-center justify-center hover:scale-105 transition-transform shadow-lg z-10 min-h-[44px] min-w-[44px]"
-          aria-label="Call to action"
-        >
-          <svg className="w-6 h-6 text-cream" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-          </svg>
-        </button>
       </div>
     </section>
   );
